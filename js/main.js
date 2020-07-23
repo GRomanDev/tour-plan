@@ -1,4 +1,4 @@
-var mySwiper = new Swiper(".swiper-container", {
+var hotelSlider = new Swiper(".hotel-slider", {
   // Optional parameters
   loop: true,
   effect: "fade",
@@ -7,7 +7,20 @@ var mySwiper = new Swiper(".swiper-container", {
   },
   // Navigation arrows
   navigation: {
-    nextEl: ".slider-button__next",
-    prevEl: ".slider-button__prev",
+    nextEl: ".hotel-slider__button__next",
+    prevEl: ".hotel-slider__button__prev",
+  },
+});
+
+var reviewsSlider = new Swiper(".reviews-slider", {
+  // Optional parameters
+  loop: true,
+  keyboard: {
+    enabled: true,
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
