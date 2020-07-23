@@ -642,12 +642,12 @@ template {
   background-color: transparent;
 }
 
-.hotel-slider__button__next {
+.hotel-slider__button--next {
   right: 18px;
   background-image: url(../img/arrow-next.svg);
 }
 
-.hotel-slider__button__prev {
+.hotel-slider__button--prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
 }
@@ -841,6 +841,8 @@ template {
 }
 
 .newsletter-title {
+  max-width: 242px;
+  overflow-wrap: break-word;
   color: #ffffff;
   font-style: normal;
   font-weight: 300;
@@ -878,7 +880,9 @@ template {
 }
 
 .subscribe__button {
-  width: 65px;
+  min-width: 65px;
+  max-width: 110px;
+  overflow-wrap: break-word;
   height: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -962,12 +966,12 @@ template {
   z-index: 99;
 }
 
-.reviews-slider__button__prev {
+.reviews-slider__button--prev {
   background-image: url(../img/arrow-prev-secondary.svg);
   left: 0;
 }
 
-.reviews-slider__button__next {
+.reviews-slider__button--next {
   background-image: url(../img/arrow-next-secondary.svg);
   right: 0;
 }
