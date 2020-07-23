@@ -20,7 +20,7 @@ var reviewsSlider = new Swiper(".reviews-slider", {
   },
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".reviews-slider__button__next",
+    prevEl: ".reviews-slider__button__prev",
   },
 });
