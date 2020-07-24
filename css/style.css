@@ -1335,13 +1335,13 @@ template {
   .reviews-slider__button {
     top: 32px;
   }
-  .reviews-slider__button__prev {
+  .reviews-slider__button--prev {
     left: 50%;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     margin-left: -65px;
   }
-  .reviews-slider__button__next {
+  .reviews-slider__button--next {
     right: 50%;
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
