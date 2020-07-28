@@ -35,7 +35,7 @@
     display: flex
     align-items: center
     justify-content: space-between
-    flex-wrap: wrap
+    flex-wrap: wrap    
   &__ul
     padding: 0
     margin: 0
@@ -58,7 +58,8 @@
     font-weight: normal
     font-size: 14px
     line-height: 160%
-    color: $footer-text-color
+    color: $footer-text-color    
+    flex-wrap: wrap
     &--mb-2
       margin-bottom: 26px
   &__icon
@@ -69,7 +70,7 @@
     margin-bottom: 22px
   &__link
     text-decoration: none
-    color: inherit
+    color: inherit    
   &__input
     background-color: #ffffff
     border-radius: 4px
@@ -109,9 +110,8 @@
   &-bottom
     display: flex
     justify-content: space-between
-    &__desktop
-      width: 696px
-      margin: 95px 0 0 auto
+    max-width: 696px
+    margin: 95px 0 0 auto
     &__text
       min-width: 283px
       display: flex
