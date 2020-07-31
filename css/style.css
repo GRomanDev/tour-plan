@@ -1249,8 +1249,6 @@ template {
   font-size: 14px;
   line-height: 160%;
   color: #BDBDBD;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .footer__item--mb-2 {
