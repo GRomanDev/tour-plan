@@ -724,6 +724,7 @@ template {
   color: #ffffff;
   background-color: #EC1F46;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .rating__text {
@@ -1367,6 +1368,15 @@ template {
   left: 0;
   background-color: rgba(0, 143, 223, 0.39);
   z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__dialog {
@@ -1381,6 +1391,15 @@ template {
   color: #ffffff;
   border-radius: 8px;
   z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__close {
