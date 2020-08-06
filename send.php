@@ -55,5 +55,5 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Location: thankyou.html');
+header('Location: thankyou-newsletter.html');
 // echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
