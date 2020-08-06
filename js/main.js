@@ -38,12 +38,6 @@ $(document).ready(function () {
   modalButton.on("click", openModal);
   closeModalButton.on("click", closeModal);
 
-  // function closeModal(e) {
-  //   if (!e.keyCode | s | (e.keyCode === 27)) {
-  //   }
-  // }
-  // document.addEventListener("keydown", closeModal);
-
   function openModal() {
     var targetModal = $(this).attr("data-href");
     $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
