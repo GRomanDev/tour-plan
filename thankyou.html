@@ -16,7 +16,7 @@
     <header class="navbar navbar--mobile-fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo"
+          <a href="https://g-roman.ru/tour-plan/" class="logo"
             ><img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -130,10 +130,10 @@
         <div class="hotel-info">
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
-              <h1 class="hotel-name hotel-info__name">Сообщение отправлено!</h1>
+              <h1 class="hotel-name hotel-info__name">Message sent!</h1>
             </div>
             <p class="hotel-description hotel-info__description">
-              Наш менеджер свяжется с Вами в ближайшее время.
+              Our manager will contact you soon.
             </p>
           </div>
           <!-- /.hotel-info__text -->
@@ -143,15 +143,12 @@
       <!-- /.container -->
     </section>
     <!-- .hotel -->
-
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="img/vertical-logo.svg"
-            alt="logo: Best tour plan"
-            class="logo footer__logo"
-          />
+          <a href="https://g-roman.ru/tour-plan/" class="footer__logo">
+            <img src="img/vertical-logo.svg" alt="logo: Best tour plan" />
+          </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -270,37 +267,62 @@
                     alt="icon: phone call"
                   />
                 </div>
-                Tel (business hours) : 269 1500 <br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-                pm) <br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div class="footer__wrapper-link">
+                  Tel (business hours) :
+                  <a href="tel:269 1500" class="footer__contacts-link"
+                    >269 1500</a
+                  >
+                  <br />
+                  Tel (hotline) Monday - Saturday:
+                  <a href="tel:52-56-61-38" class="footer__contacts-link"
+                    >52-&nbsp;56-&nbsp;61-&nbsp;38</a
+                  >
+                  (08:00&nbsp;am – 20:00&nbsp;pm) <br />
+                  Tel (hotline) Sunday:
+                  <a href="tel:52-56-61-38" class="footer__contacts-link"
+                    >52-56-61-38</a
+                  >
+                  (08:00&nbsp;am&nbsp;– 14:00&nbsp;pm)
+                </div>
               </li>
               <li class="footer__item">
                 <div class="footer__icon-wrapper">
                   <img src="img/email.svg" alt="icon: email" />
                 </div>
-                cherly.lawson@example.com
+                <a
+                  href="mailto:cherly.lawson@example.com"
+                  class="footer__contacts-link"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
           <!-- footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                  minlength="2"
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input phone-us"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                  minlength="18"
+                />
+              </div>
               <textarea
-                class="footer__message"
+                class="message footer__message"
                 placeholder="Message"
                 name="message"
               ></textarea>
@@ -323,9 +345,11 @@
             alt="icon: pay"
           />
         </div>
+        <!-- .footer-bottom -->
       </div>
       <!-- /.container -->
     </footer>
+
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
