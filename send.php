@@ -19,6 +19,23 @@ $body = "
 <b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
 ";
+header('Location: thankyou-booking.html');
+if(empty($name) and empty($phone) and empty($message)){
+    $body = "
+<h2>Новое обращение</h2>
+<b>Почта:</b> $email
+";
+header('Location: thankyou-newsletter.html');
+}
+if(empty($email)){
+    $body = "
+<h2>Новое обращение</h2>
+<b>Имя:</b> $name<br>
+<b>Телефон:</b> $phone<br><br>
+<b>Сообщение:</b><br>$message
+";
+header('Location: thankyou-booking.html');
+}
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -55,5 +72,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Location: thankyou-newsletter.html');
 // echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
