@@ -18,9 +18,6 @@ $(document).ready(function () {
   var reviewsSlider = new Swiper(".reviews-slider", {
     // Optional parameters
     loop: true,
-    keyboard: {
-      enabled: true,
-    },
     // Navigation arrows
     navigation: {
       nextEl: ".reviews-slider__button--next",
