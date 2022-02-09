@@ -50,12 +50,28 @@
       background-color: transparent
       cursor: pointer
       z-index: 99
+      transition: all .3s
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 30px
+        height: 30px
+        background-color: $dark
+        opacity: 0
+        border-radius: 100%
+        transition: all .3s
       &--prev
         background-image: url(../img/arrow-prev-secondary.svg)
         left: 0
       &--next
         background-image: url(../img/arrow-next-secondary.svg)
         right: 0
+      @media (any-hover: hover)
+        &:hover
+          &::before
+            opacity: 0.2
     &__profile
       display: flex
       flex-direction: column
@@ -92,7 +108,4 @@
       font-size: 12px
       line-height: 160%
       text-align: justify
-      margin: auto      
-    
-      
-
+      margin: auto
