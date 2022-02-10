@@ -73,12 +73,28 @@
       background-position: center
       background-size: 10px
       background-color: transparent
+      transition: all .3s
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 30px
+        height: 30px
+        background-color: $primary
+        opacity: 0
+        border-radius: 100%
+        transition: all .3s
       &--next
         right: 18px
         background-image: url(../img/arrow-next.svg)
       &--prev
         left: 18px
         background-image: url(../img/arrow-prev.svg)
+      @media (any-hover: hover)
+        &:hover
+          &::before
+            opacity: 0.5
 .stars
   flex-basis: 100%
 .offer
@@ -94,7 +110,7 @@
   text-align: center
   color: $light
   background-color: $primary
-  border-radius: 4px  
+  border-radius: 4px
   &__text
     font-size: 8px
     line-height: 10px
@@ -154,6 +170,10 @@
     color: inherit
   &__num
     margin-left: 8px
+    transition: all .3s
+    @media (any-hover: hover)
+      &:hover
+        color: $primary
   &__button
     width: 100%
     min-height: 45px
@@ -169,5 +189,3 @@
   width: 347px
   height: 213px
   border-radius: 10px
-  
-    
